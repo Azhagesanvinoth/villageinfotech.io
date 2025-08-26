@@ -203,18 +203,142 @@
       <p>Our mission is to provide exceptional medical coding services and IT solutions that empower healthcare organizations...</p>
     </section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:villageinfotechclient@gmail.com">villageinfotechclient@gmail.com</a></p>
-      <p>Address: Office 805, Orathanadu, Thanjavur, Tamilnadu, India - 614625</p>
-    </section>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Village Info Tech</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    label {
+      font-weight: bold;
+      color: #444;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    textarea {
+      grid-column: span 2;
+      min-height: 100px;
+    }
+    .checkbox {
+      grid-column: span 2;
+    }
+    .checkbox label {
+      font-weight: normal;
+    }
+    .btn {
+      grid-column: span 2;
+      text-align: center;
+    }
+    button {
+      background: #ff6600;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #e65c00;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Technology and Health Care Questions</h2>
+    <form action="mailto:yourcompanyemail@example.com" method="post" enctype="text/plain">
+      <div>
+        <label>Your Name*</label>
+        <input type="text" name="name" required>
+      </div>
+      <div>
+        <label>Your Email*</label>
+        <input type="email" name="email" required>
+      </div>
+      <div>
+        <label>Phone Number</label>
+        <input type="text" name="phone">
+      </div>
+      <div>
+        <label>Mobile Number</label>
+        <input type="text" name="mobile">
+      </div>
+      <div>
+        <label>Company / Organization*</label>
+        <input type="text" name="company" required>
+      </div>
+      <div>
+        <label>Speciality</label>
+        <input type="text" name="speciality">
+      </div>
+      <div>
+        <label>Job Title</label>
+        <input type="text" name="jobtitle">
+      </div>
+      <div>
+        <label>Select your country</label>
+        <select name="country">
+          <option value="">-- Select Country --</option>
+          <option>India</option>
+          <option>USA</option>
+          <option>UK</option>
+          <option>Canada</option>
+          <option>Australia</option>
+        </select>
+      </div>
+      <div class="textarea">
+        <label>Your Question</label>
+        <textarea name="question"></textarea>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" required> By completing this form, you are agreeing to receive future updates *
+      </div>
+      <div class="btn">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
   </div>
+</body>
+</html>
+
 
   <footer>
     <p>&copy; 2024 Village Infotech. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
+
 
 
 
