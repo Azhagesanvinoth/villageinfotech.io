@@ -113,6 +113,34 @@
       margin-top: 20px;
     }
 
+    /* ===== Services Grid ===== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+    .service-card {
+      background: #fff;
+      color: #333;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    }
+    .service-card img {
+      height: 60px;
+      margin-bottom: 15px;
+    }
+    .service-card h3 {
+      color: #0066cc;
+    }
+
     /* ===== Contact Form Styling ===== */
     .form-section {
       background: #f9f9f9;
@@ -157,9 +185,6 @@
     .checkbox {
       grid-column: span 2;
     }
-    .checkbox label {
-      font-weight: normal;
-    }
     .btn {
       grid-column: span 2;
       text-align: center;
@@ -190,7 +215,7 @@
   <nav>
     <a href="#about">About Us</a>
     <a href="#services">Services</a>
-    <a href="#institute">Institute</a>
+    <a href="#institute-brief">Institute</a>
     <a href="#mission">Mission</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -203,16 +228,15 @@
   </div>
 
   <div class="container">
+    <!-- About -->
     <section id="about">
       <h2>About Us</h2>
-      <p>
-        <strong>Village Info Tech</strong>, founded in <strong>2023</strong>, is a
+      <p><strong>Village Info Tech</strong>, founded in <strong>2023</strong>, is a
         professional organization dedicated to delivering high-quality
         <strong>Medical Coding</strong>, <strong>Healthcare IT</strong>, and
         <strong>Technology Solutions</strong>.
       </p>
-      <p>
-        Since our inception, our mission has been to simplify healthcare
+      <p>Since our inception, our mission has been to simplify healthcare
         documentation and billing by providing precise, efficient, and compliant
         coding solutions. We partner with hospitals, clinics, and independent
         physicians to ensure accuracy, compliance, and smooth revenue cycles.
@@ -225,128 +249,68 @@
       </ul>
     </section>
 
-  <!-- Services Section -->
-  <section>
-    <h2>What We Offer</h2>
-    <div class="services-grid">
-
-      <!-- Service 1 -->
-      <div class="service-card">
-        <img src="https://img.icons8.com/ios-filled/70/4a90e2/medical-doctor.png" alt="Medical Coding">
-        <h3>Medical Coding Services</h3>
-        <p>End-to-end ICD-10, CPT, and HCPCS coding services ensuring accuracy, compliance, and faster reimbursements.</p>
+    <!-- Services -->
+    <section id="services">
+      <h2>What We Offer</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://img.icons8.com/ios-filled/70/4a90e2/medical-doctor.png" alt="Medical Coding">
+          <h3>Medical Coding Services</h3>
+          <p>End-to-end ICD-10, CPT, and HCPCS coding services ensuring accuracy, compliance, and faster reimbursements.</p>
+        </div>
+        <div class="service-card">
+          <img src="https://img.icons8.com/ios-filled/70/4a90e2/training.png" alt="Training">
+          <h3>Professional Training</h3>
+          <p>Industry-focused training programs for students and professionals in Medical Coding, Healthcare IT, and Compliance.</p>
+        </div>
+        <div class="service-card">
+          <img src="https://img.icons8.com/ios-filled/70/4a90e2/data-configuration.png" alt="IT Solutions">
+          <h3>Healthcare IT Solutions</h3>
+          <p>Customized IT tools, software integration, and automation solutions to streamline hospital and clinic operations.</p>
+        </div>
+        <div class="service-card">
+          <img src="https://img.icons8.com/ios-filled/70/4a90e2/business.png" alt="Consulting">
+          <h3>Consulting & Compliance</h3>
+          <p>Expert consulting in HIPAA compliance, audit support, and best practices to safeguard your organization.</p>
+        </div>
+        <div class="service-card">
+          <img src="https://img.icons8.com/ios-filled/70/4a90e2/network.png" alt="Global Service">
+          <h3>Global Service Support</h3>
+          <p>Trusted by clients worldwide with scalable, cost-effective solutions tailored to healthcare organizations.</p>
+        </div>
       </div>
+    </section>
 
-      <!-- Service 2 -->
-      <div class="service-card">
-        <img src="https://img.icons8.com/ios-filled/70/4a90e2/training.png" alt="Training">
-        <h3>Professional Training</h3>
-        <p>Industry-focused training programs for students and professionals in Medical Coding, Healthcare IT, and Compliance.</p>
+    <!-- Institute -->
+    <section id="institute-brief" style="padding:60px 20px; background:linear-gradient(135deg,#f8f9fa,#eef1f6); color:#000;">
+      <div style="max-width:1100px; margin:auto; text-align:center;">
+        <h2 style="font-size:2.2rem; font-weight:700; margin-bottom:20px; color:#222;">About Our Institute</h2>
+        <p style="font-size:1.1rem; line-height:1.8; color:#555; max-width:850px; margin:auto;">
+          Founded in <b>2023</b>, our institute is dedicated to excellence in <b>Medical Coding, Healthcare IT, and Professional Training</b>.
+          We empower students and organizations with industry-ready skills, globally recognized training, and hands-on learning programs that shape the future of healthcare technology.
+        </p>
       </div>
+    </section>
 
-      <!-- Service 3 -->
-      <div class="service-card">
-        <img src="https://img.icons8.com/ios-filled/70/4a90e2/data-configuration.png" alt="IT Solutions">
-        <h3>Healthcare IT Solutions</h3>
-        <p>Customized IT tools, software integration, and automation solutions to streamline hospital and clinic operations.</p>
-      </div>
-
-      <!-- Service 4 -->
-      <div class="service-card">
-        <img src="https://img.icons8.com/ios-filled/70/4a90e2/business.png" alt="Consulting">
-        <h3>Consulting & Compliance</h3>
-        <p>Expert consulting in HIPAA compliance, audit support, and best practices to safeguard your organization.</p>
-      </div>
-
-      <!-- Service 5 -->
-      <div class="service-card">
-        <img src="https://img.icons8.com/ios-filled/70/4a90e2/network.png" alt="Global Service">
-        <h3>Global Service Support</h3>
-        <p>Trusted by clients worldwide with scalable, cost-effective solutions tailored to healthcare organizations.</p>
-      </div>
-
-    </div>
-  </section>
-
-   <!-- Institute Brief Section -->
-<section id="institute-brief" style="padding:60px 20px; background:linear-gradient(135deg,#f8f9fa,#eef1f6);">
-  <div style="max-width:1100px; margin:auto; text-align:center;">
-    <h2 style="font-size:2.2rem; font-weight:700; margin-bottom:20px; color:#222;">About Our Institute</h2>
-    <p style="font-size:1.1rem; line-height:1.8; color:#555; max-width:850px; margin:auto;">
-      Founded in <b>2023</b>, our institute is dedicated to excellence in <b>Medical Coding, Healthcare IT, and Professional Training</b>. 
-      We empower students and organizations with industry-ready skills, globally recognized training, and hands-on learning programs that
-      shape the future of healthcare technology.
-    </p>
-
-    <!-- Cards Section -->
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:25px; margin-top:40px;">
-      
-      <!-- Card 1 -->
-      <div style="background:#fff; padding:30px; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
-        <img src="https://img.icons8.com/ios-filled/70/4a90e2/graduate.png" alt="Training" style="margin-bottom:15px;">
-        <h3 style="font-size:1.3rem; font-weight:600; margin-bottom:10px;">Professional Training</h3>
-        <p style="color:#555;">Comprehensive courses in Medical Coding, ICD-10, CPT, and Healthcare IT designed to prepare you for global careers.</p>
-      </div>
-
-      <!-- Card 2 -->
-      <div style="background:#fff; padding:30px; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
-        <img src="https://img.icons8.com/ios-filled/70/4a90e2/hospital-room.png" alt="Healthcare" style="margin-bottom:15px;">
-        <h3 style="font-size:1.3rem; font-weight:600; margin-bottom:10px;">Healthcare Solutions</h3>
-        <p style="color:#555;">Partnering with healthcare organizations to provide IT solutions, compliance support, and consulting services.</p>
-      </div>
-
-      <!-- Card 3 -->
-      <div style="background:#fff; padding:30px; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
-        <img src="https://img.icons8.com/ios-filled/70/4a90e2/goal.png" alt="Mission" style="margin-bottom:15px;">
-        <h3 style="font-size:1.3rem; font-weight:600; margin-bottom:10px;">Our Mission</h3>
-        <p style="color:#555;">To bridge the gap between education and healthcare technology through world-class training and innovation.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
+    <!-- Mission -->
     <section id="mission">
       <h2>Our Mission</h2>
       <p>Our mission is to provide exceptional medical coding services and IT solutions that empower healthcare organizations...</p>
     </section>
 
-    <!-- Contact Form -->
+    <!-- Contact -->
     <section id="contact" class="form-section">
       <div class="form-container">
         <h2>Contact Village IT</h2>
         <form action="mailto:villageinfotechclient@gmail.com" method="post" enctype="text/plain">
-          <div>
-            <label>Your Name*</label>
-            <input type="text" name="name" required>
-          </div>
-          <div>
-            <label>Your Email*</label>
-            <input type="email" name="email" required>
-          </div>
-          <div>
-            <label>Phone Number</label>
-            <input type="text" name="phone">
-          </div>
-          <div>
-            <label>Mobile Number</label>
-            <input type="text" name="mobile">
-          </div>
-          <div>
-            <label>Company / Organization*</label>
-            <input type="text" name="company" required>
-          </div>
-          <div>
-            <label>Speciality</label>
-            <input type="text" name="speciality">
-          </div>
-          <div>
-            <label>Job Title</label>
-            <input type="text" name="jobtitle">
-          </div>
-          <div>
-            <label>Select your country</label>
+          <div><label>Your Name*</label><input type="text" name="name" required></div>
+          <div><label>Your Email*</label><input type="email" name="email" required></div>
+          <div><label>Phone Number</label><input type="text" name="phone"></div>
+          <div><label>Mobile Number</label><input type="text" name="mobile"></div>
+          <div><label>Company / Organization*</label><input type="text" name="company" required></div>
+          <div><label>Speciality</label><input type="text" name="speciality"></div>
+          <div><label>Job Title</label><input type="text" name="jobtitle"></div>
+          <div><label>Select your country</label>
             <select name="country">
               <option value="">-- Select Country --</option>
               <option>India</option>
@@ -376,6 +340,3 @@
   </footer>
 </body>
 </html>
-
-
-
